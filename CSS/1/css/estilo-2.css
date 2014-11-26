@@ -1,0 +1,12 @@
+/* Comentario */
+
+#cuadrado {
+	background-color: #8899cc;
+	width: 100px;
+	height: 100px;
+}
+
+.elemento {
+	background-color: #00ffff;
+	width: 100%;
+}

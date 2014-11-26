@@ -1,0 +1,19 @@
+body {
+	background-color: #ccc;
+}
+
+.elemento {
+	background-color: #8899cc;
+	width: 200px;
+	height: 100px;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.parrafo {
+	background-color: #00ffff;
+	width: 150px;
+	height: 50px;
+	margin-top: 10px;
+}
