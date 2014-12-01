@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Venta de Artículos</title>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/manejador-ventas.js"></script>
+		<link href="css/estilo-ventas.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="header">
+			<img id="logo" src="img/Logo-blog.png">
+			<div id="nombre">Venta de Artículos</div>
+		</div>
+		<div class="content">
+			
+			<h1>Disponibles</h1>
+			
+			<table>
+				<tbody id="listado">
+					<tr>
+						<td class="columna">Nombre</td>
+						<td class="columna">Precio</td>
+						<td class="columna">Opción</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h1>Mi carro de compras</h1>
+			
+			<table>
+				<tbody id="carro">
+					<tr>
+						<td class="columna">Nombre</td>
+						<td class="columna">Precio</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br/>
+
+			<div id="pago_tabla">
+				<table>
+					<tr>
+						<td class="columna">Costo final</td>
+						<td class="columna">Pago</td>
+						<td class="columna">Vuelto</td>
+					</tr>
+					<tr>
+						<td><div id="costo_final"></div></td>
+						<td><input type="text" id="pago" value="0"/></td>
+						<td><div id="vuelto"></div></td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			 <div id="texto-footer">Desarrollado y diseñado por <a class="link" href="mailto:tucorreo@dominio.org">Mi nombre</a></div>
+		</div>
+	</body>
+</html>

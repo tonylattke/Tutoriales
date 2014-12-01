@@ -1,0 +1,73 @@
+body {
+	width: 1024px;
+	margin: 0 auto;
+	font-size: 20px;
+	background-color: #eee;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited{
+	color: blue;
+}
+
+.link {
+	color: white;
+	font-weight: bold;
+}
+
+.link:hover {
+	color: #ddd;
+}
+
+/*********************************** Header **********************************/
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: #333;
+}
+
+#logo {
+	width: 85px;
+	height: 100px;
+	float: left;
+}
+
+#nombre {
+	font-size: 85px;
+	height: 100px;
+	color: white;
+	margin-left:100px; 
+}
+
+/*********************************** Content *********************************/
+.content {
+	background-color: white;
+	padding: 10px 20px 10px 20px
+}
+
+#pago_tabla {
+	width: 750px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.columna {
+	width: 250px;
+	font-weight: bold;
+}
+
+/*********************************** Footer **********************************/
+.footer {
+	background-color: #555;
+	color: white;
+	text-align: center;
+	height: 50px;
+	padding-bottom: 10px;
+}
+
+#texto-footer {
+	padding-top: 15px;
+}

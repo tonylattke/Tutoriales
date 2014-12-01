@@ -1,0 +1,22 @@
+#cuadro {
+	background-color: #444;
+	color: white;
+	width: 100px;
+	height: 100px;
+}
+
+.elemento {
+	cursor: pointer;
+}
+
+.rojo {
+	color: #ff0000;
+}
+
+.verde {
+	color: #33cc33;
+}
+
+.azul {
+	color: #0000ff;
+}
