@@ -1,0 +1,21 @@
+.margen {
+	margin-bottom: 50px;
+}
+
+.rojo {
+	background-color: #ff0000;
+	color: white;
+}
+
+.verde {
+	background-color: #33cc33;
+}
+
+.azul {
+	background-color: #0000ff;
+	color: white;
+}
+
+.gris {
+	background-color: #ccc;
+}
