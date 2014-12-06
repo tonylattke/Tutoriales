@@ -1,0 +1,16 @@
+.bordes (@radio: 5px) {
+	border-radius: @radio;
+	height: 100px;
+	width: 100px;
+	color: white;
+}
+
+#area-azul {
+	.bordes;
+	background-color: blue;
+}
+
+#area-roja {
+	.bordes(10px);
+	background-color: red;
+}

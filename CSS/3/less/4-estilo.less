@@ -1,0 +1,11 @@
+@base-color: #444;
+@color:      #ddd;
+ 
+#area-1 {
+	color: (@base-color * 2);
+}
+
+#area-2 {
+	color: (@base-color + #000055);
+	background-color: desaturate(@color, 10%);
+}
