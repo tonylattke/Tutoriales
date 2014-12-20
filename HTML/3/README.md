@@ -1,8 +1,8 @@
 Tutorial Canvas
 ==
 
-Material de [Canvas](http://tony.lattke.org/canvas/)
+Material de [Canvas](https://github.com/tonylattke/canvas)
 
-Material de [juego de Snake](http://tony.lattke.org/snake/)
+Material de [juego de Snake](https://github.com/tonylattke/snake)
 
-Material de [juego de Batman](http://tony.lattke.org/batman/)
+Material de [juego de Batman](https://github.com/tonylattke/batman)
