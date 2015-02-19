@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Servicios</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+		<script src="js/1-servicios.js"></script>
+	</head>
+	<body>
+		<div ng-app="Calculadora">
+			<div ng-controller="CalculadoraCtrl">
+				<!--   Valores   -->
+				Valor A: 
+				<input type="number" ng-model="valorA">
+				Valor B: 
+				<input type="number" ng-model="valorB">
+				
+				<!-- Operaciones -->
+				<br />
+				Operaciones:
+				<button ng-click="hacerSuma()">Sumar</button>
+				<button ng-click="hacerResta()">Restar</button>
+				<button ng-click="guardarResultado()">Guardar resultado</button>
+				<button ng-click="sumarRespaldo()">Sumar al resultado el valor guardado</button>
+				
+				<!--   Mensajes  -->
+				<h3>Operación realizada: {{mensaje}}</h3>
+				<h3>Resultado: {{resultado}}</h3>
+			</div>
+		</div>
+	</body>
+</html>

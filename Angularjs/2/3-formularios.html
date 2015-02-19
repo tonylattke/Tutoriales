@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Formularios</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+	</head>
+
+	<body ng-app>
+		<h1>Formulario</h1>
+
+		<form role="form" name="forma">
+			<div class="form-group" ng-class="{'has-error': forma.nombreUsuario.$invalid, 'has-success': forma.nombreUsuario.$valid}">
+				<label for="inputNombre">Nombre de usuario:</label>
+				<input id="inputNombre" type="text" class="form-control" name="nombreUsuario" ng-model="usuario.nombre" required autofocus>
+			</div>
+			<div class="form-group" ng-class="{'has-error': forma.emailUsuario.$invalid, 'has-success': forma.emailUsuario.$valid}">
+				<label for="inputEmail">Email</label>
+				<input id="inputEmail" type="email" class="form-control" name="emailUsuario" ng-model="usuario.email" required>
+				<div ng-show="forma.emailUsuario.$dirty && forma.emailUsuario.$invalid">
+					<p class="help-block text-danger" ng-show="forma.emailUsuario.$error.required">Campo requerido</p>
+					<p class="help-block text-danger" ng-show="forma.emailUsuario.$error.email">Email no válido</p>
+				</div>
+			</div>
+			<div class="checkbox">
+				<label>
+				<input type="checkbox" name="aceptoUsuario" ng-model="usuario.acepto" required> Acepto.
+				</label>
+			</div>
+			<button ng-disabled="forma.$invalid" onclick="alert('Datos enviados satisfactoriamente')">Enviar</button>
+		</form>
+
+	</body>
+
+</html>	

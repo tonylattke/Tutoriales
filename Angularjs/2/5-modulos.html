@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Prueba de módulo - Infinite scroll</title>
+		<meta charset="utf-8">
+
+		<!-- Librerías de Javascript -->
+		<script src="js/jquery-angular-ng-infinite-scroll.js"></script>
+		<script src="js/5-modulos.js"></script>
+
+		<!-- Librerías de CSS -->
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+		
+	</head>
+
+	<body ng-app='pruebaModulo'>
+		<div ng-controller='controlador'>
+			<div infinite-scroll='cargarMasDatos()' infinite-scroll-distance='2'>
+				<ul>
+					<li ng-repeat='dato in datos'>{{dato}}</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

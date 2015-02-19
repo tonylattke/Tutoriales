@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Fábricas</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+		<script src="js/2-fabricas.js"></script>
+	</head>
+	<body>
+		<div ng-app="Bitacora">
+			<div ng-controller="BitacoraCtrl">
+				<!-- Entrada -->
+				<input type="text" size="50" ng-model="entradaMensaje" autofocus>
+				<!-- Agregar -->
+				<button ng-click="agregar()">Agregar Tarea</button>
+				<!-- Mostrar tareas -->
+				<h3>Tareas realizadas:</h3>
+				{{dato.mensajes}}
+				<br/><br/>
+				<!-- Reiniciar -->
+				<button ng-click="reiniciar()">Reiniciar</button>
+			</div>
+		</div>
+	</body>
+</html>

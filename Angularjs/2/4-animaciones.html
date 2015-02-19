@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Animaciones</title>
+		<meta charset="utf-8">
+
+		<!-- Librerías de Javascript -->
+		<script src="http://code.angularjs.org/1.2.13/angular.min.js"></script>
+		<script src="http://code.angularjs.org/1.2.13/angular-animate.js"></script>
+		<script src="js/4-animaciones.js"></script>
+
+		<!-- Librerías de CSS -->
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/4-animaciones.css">
+	</head>
+
+	<body ng-app="Animaciones">
+
+		<!-- Animación 1 -->
+		<h1>Animación 1</h1>
+		<div ng-controller="AnimacionCtrl">
+			<!-- Controles -->
+			<button ng-click="disponible=!disponible">Reproducir</button>
+			<br />
+			<!-- Elemento animado -->
+			<p class="animacion1" ng-if="disponible">Ejemplo de animaciones</p>
+		</div>
+
+		<hr>
+
+		<!-- Animación 2 -->
+		<h1>Animación 2</h1>
+		<!-- Controles -->
+		<button ng-click="varClase='transformar'">Reproducir</button>
+		<button ng-click="varClase=''">Retroceder</button>
+		<br />
+		<!-- Elemento animado -->
+		<p ng-class="varClase">Texto Animado</p>
+		
+	</body>
+
+</html>

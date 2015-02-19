@@ -1,0 +1,45 @@
+/************************************* Animación 1 *************************************/
+
+.difuminar {
+	-webkit-transition: ease-in-out 1.618s;
+	-moz-transition: ease-in-out 1.618s;
+	-ms-transition: ease-in-out 1.618s;
+	-o-transition: ease-in-out 1.618s;
+	transition: ease-in-out 1.618s;
+}
+
+.difuminar.ng-enter {
+	opacity: 0;
+}
+
+.difuminar.ng-enter-active {
+	opacity: 1;
+}
+
+.difuminar.ng-leave {
+	opacity: 1;
+}
+
+.difuminar.ng-leave-active {
+	opacity: 0;
+}
+
+/************************************* Animación 2 *************************************/
+
+.transformar-add, .transformar-remove {
+	-webkit-transition: cubic-bezier(0.271, 0.542, 0.485, 0.942) 1.618s;
+	-moz-transition: cubic-bezier(0.271, 0.542, 0.485, 0.942) 1.618s;
+	-o-transition: cubic-bezier(0.271, 0.542, 0.485, 0.942) 1.618s;
+	transition: cubic-bezier(0.271, 0.542, 0.485, 0.942) 1.618s;
+}	
+
+.transformar,
+.transformar-add.transformar-add-active {
+	color: blue;
+	font-size:3.14em;
+}
+
+.transformar-remove.transformar-remove-active {
+	font-size:1.0em;
+	color:black;
+}
