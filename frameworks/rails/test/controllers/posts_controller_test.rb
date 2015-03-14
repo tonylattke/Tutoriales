@@ -18,7 +18,7 @@ class PostsControllerTest < ActionController::TestCase
 
   test "should create post" do
     assert_difference('Post.count') do
-      post :create, post: { contenido: @post.contenido, nombre: @post.nombre }
+      post :create, post: { contenido: @post.contenido, nombre: @post.nombre, autor: @post.autor }
     end
 
     assert_redirected_to post_path(assigns(:post))
@@ -35,7 +35,7 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   test "should update post" do
-    patch :update, id: @post, post: { contenido: @post.contenido, nombre: @post.nombre }
+    patch :update, id: @post, post: { contenido: @post.contenido, nombre: @post.nombre, autor: @post.autor }
     assert_redirected_to post_path(assigns(:post))
   end
 

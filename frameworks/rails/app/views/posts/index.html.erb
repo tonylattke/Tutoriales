@@ -5,6 +5,7 @@
     <tr>
       <th>Nombre</th>
       <th>Contenido</th>
+      <th>Autor</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
       <tr>
         <td><%= post.nombre %></td>
         <td><%= post.contenido %></td>
+        <td><%= post.autor %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>

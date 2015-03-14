@@ -3,7 +3,9 @@
 one:
   nombre: MyString
   contenido: MyString
+  autor: MyString
 
 two:
   nombre: MyString
   contenido: MyString
+  autor: MyString
