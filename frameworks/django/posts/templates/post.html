@@ -4,20 +4,20 @@
 {% block principal_content %}
 
 <h1>{{post.nombre}}</h1>
-<h4>Autor: {{post.autor}}</h4>
+<h4>Autor: {{post.autor}} <a href="editar/{{post.id}}" class="btn btn-primary">Editar</a></h4>
 <p>
     <span class="glyphicon glyphicon-time"></span> Posteado el {{post.pub_fecha}}
 </p>
 
 {{post.contenido|linebreaks}}
 
-<a href="editar/{{post.id}}">Editar</a>
+
 
 <form method="post" id="form_crear_post" action="/posts/eliminar">
-        {% csrf_token %}
-        <input type="hidden" name="id" value="{{post.id}}">
-        <button type="submit" onclick="return confirm('Seguro?')" class="btn btn-primary">Eliminar</button>
-    </form>
+	{% csrf_token %}
+	<input type="hidden" name="id" value="{{post.id}}">
+	<button type="submit" onclick="return confirm('Seguro?')" class="btn btn-danger">Eliminar</button>
+</form>
 
 <hr>
 

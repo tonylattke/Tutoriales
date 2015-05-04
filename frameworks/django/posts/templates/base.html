@@ -5,16 +5,22 @@
     <meta charset="utf-8">
     {% csrf_token %}
     {% load staticfiles %}
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog Tutorial - Django Framework 1.8">
     <meta name="author" content="Tony Lattke">
 
     <title>Django - Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="container">
-        <a href="/inicio">Ir al inicio</a>
+        <a href="/inicio" class="btn btn-success">Ir al inicio</a>
+
+        <hr>
 
         <div class="row">
             <div class="col-lg-8">
@@ -50,6 +56,9 @@
     <!-- /.container -->
 
     <!-- JavaScript -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="{% static 'js/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
     
 </body>
 
