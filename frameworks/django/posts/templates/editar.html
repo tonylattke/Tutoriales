@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+<!-- ########################## principal_content ######################### -->
+{% block principal_content %}
+<div class="well">
+
+	<h1>Editar Post</h1>
+	
+	<form method="post" id="form_crear_post" action="/posts/editar_do">
+		{% csrf_token %}
+		<input type="hidden" name="id" value="{{post.id}}">
+		<h4>Nombre:</h4>
+		<div class="form-group">
+			<textarea name="nombre" id="nombre" class="form-control" rows="1" autofocus="autofocus">{{post.nombre}}</textarea>
+		</div>
+		<h4>Contenido:</h4>
+		<div class="form-group">
+			<textarea name="contenido" id="contenido" class="form-control">{{post.contenido}}</textarea>
+		</div>
+		<h4>Autor:</h4>
+		<div class="form-group">
+			<textarea name="autor" id="autor" class="form-control" rows="1" autofocus="autofocus">{{post.autor}}</textarea>
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Editar</button>
+	</form>
+	
+	<a href="/posts/{{post.id}}">Regresar</a>
+</div>
+
+<hr>
+{% endblock principal_content %}

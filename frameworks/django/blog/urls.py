@@ -4,7 +4,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^$', 'posts.views.index', name='home'),
+	url(r'^$', 'posts.views.index', name='inicio'),
+	url(r'^inicio$', 'posts.views.index'),
 	
 	url(r'^posts/', include('posts.urls')),
 

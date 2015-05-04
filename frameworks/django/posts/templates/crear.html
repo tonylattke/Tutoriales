@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+<!-- ########################## principal_content ######################### -->
+{% block principal_content %}
+<div class="well">
+
+	<h1>Crear Post</h1>
+	
+	<form method="post" id="form_crear_post" action="/posts/crear_do">
+		{% csrf_token %}
+		<h4>Nombre:</h4>
+		<div class="form-group">
+			<textarea name="nombre" id="nombre" class="form-control" rows="1" autofocus="autofocus"></textarea>
+		</div>
+		<h4>Contenido:</h4>
+		<div class="form-group">
+			<textarea name="contenido" id="contenido" class="form-control"></textarea>
+		</div>
+		<h4>Autor:</h4>
+		<div class="form-group">
+			<textarea name="autor" id="autor" class="form-control" rows="1" autofocus="autofocus"></textarea>
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Crear</button>
+	</form>
+	
+</div>
+
+<hr>
+{% endblock principal_content %}
