@@ -10,6 +10,12 @@ from .models 	import Post
 def index(request):
 	posts = Post.objects.all()
 	context = {'posts': posts}
+	if 'count' in request.session:
+		request.session['count'] += 1
+	else:
+		request.session['count'] = 1
+	print request.session['count']
+	print request.session
 	return render(request, 'index.html', context)
 
 def obtener(request,post_id):
