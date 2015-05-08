@@ -29,6 +29,18 @@
             </div>
 
             <div class="col-lg-4">
+                
+                {% block sidebar_content %}
+                {% endblock sidebar_content %}
+
+                <div class="well">
+                {% if user.is_authenticated %}
+                    <a href="/sesion/logout">Cerrar sesión</a>
+                {% else %}
+                    <a href="/sesion/login">Iniciar sesión</a>
+                {% endif %}
+                </div>
+
                 <!-- New Post -->
                 <div class="well">
                     <a href="/posts/crear">Crear Post</a>

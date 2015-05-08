@@ -1,21 +1,18 @@
-from django.http 				import HttpResponse
-from django.shortcuts 			import render, get_object_or_404, redirect
-from django.core.urlresolvers   import reverse
+from django.http 					import HttpResponse
+from django.shortcuts 				import render, get_object_or_404, redirect
+from django.core.urlresolvers   	import reverse
 
 from datetime	import datetime
 import json
 
 from .models 	import Post
 
+##################################### POST ####################################
+
 def index(request):
+
 	posts = Post.objects.all()
 	context = {'posts': posts}
-	if 'count' in request.session:
-		request.session['count'] += 1
-	else:
-		request.session['count'] = 1
-	print request.session['count']
-	print request.session
 	return render(request, 'index.html', context)
 
 def obtener(request,post_id):
