@@ -1,0 +1,22 @@
+[
+    {
+        "pk": 1, 
+        "model": "posts.post", 
+        "fields": {
+            "pub_fecha": "2015-05-05 16:23:42", 
+            "nombre": "Hola",
+            "contenido": "Funciona",
+            "autor":"Tony"
+        }
+    },
+    {
+        "pk": 2, 
+        "model": "posts.post", 
+        "fields": {
+            "pub_fecha": "2015-05-05 16:23:42", 
+            "nombre": "Hola 2",
+            "contenido": "Funciona 2",
+            "autor":"Tony"
+        }
+    }
+]
